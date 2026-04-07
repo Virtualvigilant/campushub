@@ -398,22 +398,6 @@ export default function ShowcasePage() {
         </motion.div>
       </section>
 
-      {/* ── STATS BAND ── */}
-      <section className={styles.statsBand}>
-        {[
-          { num: 2400, suffix: '+', label: 'Verified Listings' },
-          { num: 12000, suffix: '+', label: 'Student Users' },
-          { num: 47, suffix: '', label: 'Universities Covered' },
-          { num: 98, suffix: '%', label: 'Satisfaction Rate' },
-        ].map((s, i) => (
-          <Reveal key={i} delay={i * 0.1} className={styles.statItem}>
-            <div className={styles.statNum}>
-              <AnimatedCounter to={s.num} suffix={s.suffix} />
-            </div>
-            <div className={styles.statLabel}>{s.label}</div>
-          </Reveal>
-        ))}
-      </section>
 
       {/* ── FEATURES ── */}
       <section id="features" className={styles.section}>
